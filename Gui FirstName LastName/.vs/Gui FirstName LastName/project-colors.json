@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e4c1e6ca-5214-4ae9-9db9-619aa4725861": {
+      "ProjectGuid": "e4c1e6ca-5214-4ae9-9db9-619aa4725861",
+      "DisplayName": "Gui FirstName LastName",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

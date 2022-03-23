@@ -1,0 +1,15 @@
+D:\study\C#\1\While\While\obj\Debug\net6.0\While.csproj.AssemblyReference.cache
+D:\study\C#\1\While\While\obj\Debug\net6.0\While.GeneratedMSBuildEditorConfig.editorconfig
+D:\study\C#\1\While\While\obj\Debug\net6.0\While.AssemblyInfoInputs.cache
+D:\study\C#\1\While\While\obj\Debug\net6.0\While.AssemblyInfo.cs
+D:\study\C#\1\While\While\obj\Debug\net6.0\While.csproj.CoreCompileInputs.cache
+D:\study\C#\1\While\While\bin\Debug\net6.0\While.exe
+D:\study\C#\1\While\While\bin\Debug\net6.0\While.deps.json
+D:\study\C#\1\While\While\bin\Debug\net6.0\While.runtimeconfig.json
+D:\study\C#\1\While\While\bin\Debug\net6.0\While.dll
+D:\study\C#\1\While\While\bin\Debug\net6.0\ref\While.dll
+D:\study\C#\1\While\While\bin\Debug\net6.0\While.pdb
+D:\study\C#\1\While\While\obj\Debug\net6.0\While.dll
+D:\study\C#\1\While\While\obj\Debug\net6.0\ref\While.dll
+D:\study\C#\1\While\While\obj\Debug\net6.0\While.pdb
+D:\study\C#\1\While\While\obj\Debug\net6.0\While.genruntimeconfig.cache

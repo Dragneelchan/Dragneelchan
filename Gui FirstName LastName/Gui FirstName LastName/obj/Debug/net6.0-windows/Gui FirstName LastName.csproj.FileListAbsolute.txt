@@ -1,0 +1,21 @@
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\bin\Debug\net6.0-windows\Gui FirstName LastName.exe
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\bin\Debug\net6.0-windows\Gui FirstName LastName.deps.json
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\bin\Debug\net6.0-windows\Gui FirstName LastName.runtimeconfig.json
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\bin\Debug\net6.0-windows\Gui FirstName LastName.dll
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\bin\Debug\net6.0-windows\ref\Gui FirstName LastName.dll
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\bin\Debug\net6.0-windows\Gui FirstName LastName.pdb
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\Gui FirstName LastName.csproj.AssemblyReference.cache
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\App.g.cs
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\Gui FirstName LastName_MarkupCompile.cache
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\Gui FirstName LastName_MarkupCompile.lref
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\MainWindow.baml
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\Gui FirstName LastName.g.resources
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\Gui FirstName LastName.GeneratedMSBuildEditorConfig.editorconfig
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\Gui FirstName LastName.AssemblyInfoInputs.cache
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\Gui FirstName LastName.AssemblyInfo.cs
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\Gui FirstName LastName.csproj.CoreCompileInputs.cache
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\Gui FirstName LastName.dll
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\ref\Gui FirstName LastName.dll
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\Gui FirstName LastName.pdb
+D:\study\C#\1\Gui FirstName LastName\Gui FirstName LastName\obj\Debug\net6.0-windows\Gui FirstName LastName.genruntimeconfig.cache
