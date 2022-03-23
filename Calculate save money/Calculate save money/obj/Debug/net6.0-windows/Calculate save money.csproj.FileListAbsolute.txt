@@ -1,0 +1,21 @@
+D:\study\C#\1\Calculate save money\Calculate save money\bin\Debug\net6.0-windows\Calculate save money.exe
+D:\study\C#\1\Calculate save money\Calculate save money\bin\Debug\net6.0-windows\Calculate save money.deps.json
+D:\study\C#\1\Calculate save money\Calculate save money\bin\Debug\net6.0-windows\Calculate save money.runtimeconfig.json
+D:\study\C#\1\Calculate save money\Calculate save money\bin\Debug\net6.0-windows\Calculate save money.dll
+D:\study\C#\1\Calculate save money\Calculate save money\bin\Debug\net6.0-windows\ref\Calculate save money.dll
+D:\study\C#\1\Calculate save money\Calculate save money\bin\Debug\net6.0-windows\Calculate save money.pdb
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\Calculate save money.csproj.AssemblyReference.cache
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\App.g.cs
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\Calculate save money_MarkupCompile.cache
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\Calculate save money_MarkupCompile.lref
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\MainWindow.baml
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\Calculate save money.g.resources
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\Calculate save money.GeneratedMSBuildEditorConfig.editorconfig
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\Calculate save money.AssemblyInfoInputs.cache
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\Calculate save money.AssemblyInfo.cs
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\Calculate save money.csproj.CoreCompileInputs.cache
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\Calculate save money.dll
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\ref\Calculate save money.dll
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\Calculate save money.pdb
+D:\study\C#\1\Calculate save money\Calculate save money\obj\Debug\net6.0-windows\Calculate save money.genruntimeconfig.cache

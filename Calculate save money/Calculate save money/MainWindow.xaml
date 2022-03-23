@@ -1,0 +1,25 @@
+﻿<Window x:Class="Calculate_save_money.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculate_save_money"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="รายได้" HorizontalAlignment="Left" Margin="62,116,0,0" VerticalAlignment="Top" Height="27" Width="69"/>
+        <Label Content="รายจ่าย" HorizontalAlignment="Left" Margin="62,148,0,0" VerticalAlignment="Top" Height="27" Width="69"/>
+        <Label Content="ราคาของอยากที่อยากได้" HorizontalAlignment="Left" Margin="62,190,0,0" VerticalAlignment="Top" Height="27" Width="124"/>
+        <TextBox x:Name="IncomeTxt" HorizontalAlignment="Left" Height="18" Margin="124,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+        <TextBox x:Name="PayTxt" HorizontalAlignment="Left" Height="18" Margin="124,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+        <TextBox x:Name="NeededItemTxt" HorizontalAlignment="Left" Height="18" Margin="191,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+        <Label Content="บาท / วัน" HorizontalAlignment="Left" Margin="337,116,0,0" VerticalAlignment="Top" Height="26" Width="69"/>
+        <Label Content="บาท / วัน" HorizontalAlignment="Left" Margin="337,152,0,0" VerticalAlignment="Top" Height="26" Width="69"/>
+        <Label Content="บาท " HorizontalAlignment="Left" Margin="412,190,0,0" VerticalAlignment="Top" Height="26" Width="69"/>
+        <Button x:Name="CalculateBt" Content="Calculate" HorizontalAlignment="Left" Height="21" Margin="62,228,0,0" VerticalAlignment="Top" Width="59" Click="StartCalculate"/>
+        <Label Content="คุณต้องเก็บเงินทั้งหมด" HorizontalAlignment="Left" Margin="136,226,0,0" VerticalAlignment="Top" Height="27" Width="124"/>
+        <Label Content="วัน" HorizontalAlignment="Left" Margin="470,226,0,0" VerticalAlignment="Top" Height="26" Width="69"/>
+        <TextBox x:Name="Calculated" HorizontalAlignment="Left" Height="18" Margin="260,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+
+    </Grid>
+</Window>
