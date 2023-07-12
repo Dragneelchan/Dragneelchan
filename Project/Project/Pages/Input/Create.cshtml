@@ -1,0 +1,53 @@
+﻿@page
+@model Project.Pages.Input.newModel
+@{
+}
+<br />
+<h1>New List</h1>
+
+@if (Model.errorMessage.Length > 0)
+{
+    <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>@Model.errorMessage</strong>
+        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='close'></button>
+    </div>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <label class="col-sm-3">User Name</label>
+        <div>
+            <input type="text" class="form-control" name="user" value="@Model.data.user">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Role</label>
+        <div>
+            <select class="form-control" name="role">
+                <option value="Owner">Owner</option>
+                <option value="Admin">Admin</option>
+                <option value="User">User</option>
+                <option value="Viewer">Viewer</option>
+            </select>
+        </div>
+    </div>
+   
+    
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+            <strong>@Model.successMessage</strong>
+            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='close'></button>
+        </div>
+    }
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn-primary">Submit</button>
+        </div>
+
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/" role="button">Cancle</a>
+        </div>
+    </div>
+
+</form>

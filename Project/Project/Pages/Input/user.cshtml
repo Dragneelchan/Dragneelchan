@@ -1,0 +1,41 @@
+﻿@page
+@using Project.Pages.User;
+@model userModel
+@{
+}
+<br />
+<h1>List of Users</h1>
+<div class="row mb-3">
+    <div class="col-sm-9"></div>
+    <div class="col-sm-3 text-right">
+        <a class="btn btn-primary btn-sm" href="/Input/Create">New List</a>
+        <a class="btn btn-primary btn-sm" href="/Input/Add">Add Data</a>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>User Name</th>
+            <th>role</th>
+            <th>Income_ID</th>
+            <th>Outcome_ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var data in Model.listUser)
+        {
+            <tr>
+                <td>@data.Id</td>
+                <td>@data.user</td>
+                <td>@data.role</td>
+                <td>@data.Income_ID</td>
+                <td>@data.Outcome_ID</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Input/Edit?id=@data.Id">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Input/Delete?id=@data.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
