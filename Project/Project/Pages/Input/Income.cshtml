@@ -1,0 +1,34 @@
+﻿@page
+@model Project.Pages.Input.IncomeModel
+
+<h1>Income List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Income ID</th>
+            <th>Info</th>
+            <th>Etc</th>
+            <th>Value Income</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.listUser)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Income_ID</td>
+                <td>@item.Info</td>
+                <td>@item.Etc</td>
+                <td>@item.Value_Income</td>
+                <td>@item.Date</td>
+                <td>@item.Time</td>
+                <td>@item.Type</td>
+            </tr>
+        }
+    </tbody>
+</table>

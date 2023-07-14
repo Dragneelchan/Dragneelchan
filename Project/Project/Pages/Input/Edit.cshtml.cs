@@ -21,23 +21,14 @@ namespace Project.Pages.Input
 
         [BindProperty]
         public string User { get; set; }
-
         [BindProperty]
-        public string Info { get; set; }
-
-        [BindProperty]
-        public string Type { get; set; }
-
-        [BindProperty]
-        public string Value { get; set; }
-
-        public List<string> AvailableTypes { get; set; }
+        public string role { get; set; }
 
         public IActionResult OnGet()
         {
             try
             {
-                AvailableTypes = new List<string> { "Income", "Outcome" };
+                // Retrieve existing data from the database
                 string connectionString = "Data Source=192.168.1.65;Initial Catalog=intern;Persist Security Info=True;User ID=sa;Password=01Password";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -45,15 +36,13 @@ namespace Project.Pages.Input
                     string sql = "SELECT * FROM data WHERE Id = @id";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
-                        command.Parameters.AddWithValue("@id", Id);
+                        command.Parameters.AddWithValue("@Id", Id);
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             if (reader.Read())
                             {
                                 User = reader.GetString(1);
-                                Info = reader.GetString(2);
-                                Type = reader.GetString(3);
-                                Value = reader.GetString(4);
+                                role = reader.GetString(2);
                             }
                             else
                             {
@@ -70,8 +59,6 @@ namespace Project.Pages.Input
                 return Page();
             }
 
-            AvailableTypes = new List<string> { "Income", "Outcome" };
-
             return Page();
         }
 
@@ -79,18 +66,17 @@ namespace Project.Pages.Input
         {
             try
             {
+                // Update the role and user columns in the data table
                 string connectionString = "Data Source=192.168.1.65;Initial Catalog=intern;Persist Security Info=True;User ID=sa;Password=01Password";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string sql = "UPDATE data SET [user] = @user, [info] = @info, [type] = @type, [value] = @value WHERE Id = @id";
+                    string sql = "UPDATE data SET [user] = @user, [role] = @role WHERE Id = @Id";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("@user", User);
-                        command.Parameters.AddWithValue("@info", Info);
-                        command.Parameters.AddWithValue("@type", Type);
-                        command.Parameters.AddWithValue("@value", Value);
-                        command.Parameters.AddWithValue("@id", Id);
+                        command.Parameters.AddWithValue("@role", role);
+                        command.Parameters.AddWithValue("@Id", Id);
 
                         int rowsAffected = command.ExecuteNonQuery();
                         if (rowsAffected > 0)

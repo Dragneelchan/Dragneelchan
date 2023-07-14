@@ -24,52 +24,20 @@
         </div>
     </div>
     <div class="row mb-3">
-        <label class="col-sm-3">Information</label>
+        <label class="col-sm-3">Role</label>
         <div>
-            <select class="form-control" name="info">
-                <option value="1. Salary">1. Salary</option>
-                <option value="2. Social insurance">2. Social insurance 法定福利費（社員の社会保険/50%/750B負担分）</option>
-                <option value="3. travel expenses">3. travel expenses (旅費交通費)</option>
-                <option value="4. Renovation">4. Renovation (事務所リフォーム)</option>
-                <option value="5. General repair cost">5. General repair cost (一般修繕費:事務所の修繕）外注駆除、清掃クリーニング</option>
-                <option value="6. Consulting">6. Consulting (ビザ、ＷＰ、ホスティング、商標登録など)</option>
-                <option value="7. Entertainment cost">7. Entertainment cost (交際接待費、諸会費)</option>
-                <option value="8. Recruitment cost">8. Recruitment cost 人材紹介料</option>
-                <option value="9. Office rent">9. Office rent (社屋家賃:253　ASOKE）</option>
-                <option value="10. Utility costs">10. Utility costs 光熱費(電気代、水道代）</option>
-                <option value="11. Communication fee">11. Communication fee (通信費:TEL, WIFI)</option>
-                <option value="12. Miscellaneous expenses">12. Miscellaneous expenses (オフィスサプライ、消耗品、雑費、プリンタインク)</option>
-                <option value="13. 設備費">13. 設備費 ：個人情報対策：オフィス家具、設備など（個人情報対策：鍵付きロッカー２個）</option>
-                <option value="14. 機器費">14. 機器費 機器費（PC、PRITER、ＴＶ）</option>
-                <option value="15. ソフトウエア購入費">15. ソフトウエア購入費 (Upgate to Window 10 Pro、Program Software、個人情報ウイルス対策ソフト)</option>
-                <option value="16. 広告宣伝">16. 広告宣伝 (タイ自由ランド,Bigbeat)</option>
-                <option value="17. Outsourcing Accounting">17. Outsourcing Accounting 外部委託　会計処理（月次）</option>
-                <option value="18. Outsourcing Accounting Audit">18. Outsourcing Accounting Audit 外部委託　会計監査（中間申告、個人所得申告、年間申告、監査サポート、会計監査、定時株主総会）</option>
-                <option value="19. Banking fee">19. Banking fee　銀行手数料</option>
-                <option value="20. Outsource">20. Outsource (外注費) Calender/Bigbeat Bangkok</option>
-                <option value="21. Tax and public dues">21. Tax and public dues　（租税公課）</option>
-                <option value="22. Interest payment">22. Interest payment (支払い利息、元金返済）</option>
-                <option value="23. ＴＡＸ">23. ＴＡＸ（ＶＡＴ、源泉税、中間申告）</option>
+            <select class="form-control" name="role">
+                <option value="Owner">Owner</option>
+                <option value="Admin">Admin</option>
+                <option value="User">User</option>
+                <option value="Viewer">Viewer</option>
             </select>
         </div>
     </div>
-    <div class="row mb-3">
-        <label class="col-sm-3">Type</label>
-        <div>
-            <select class="form-control" name="type">
-                <option value="income" selected="@(Model.Info == "income")">Income</option>
-                <option value="outcome" selected="@(Model.Info == "outcome")">Outcome</option>
-            </select>
-        </div>
-    </div>
+    
 
 
-    <div class="row mb-3">
-        <label class="col-sm-3">Value</label>
-        <div>
-            <input type="number" class="form-control" name="value" value="@Model.Value">
-        </div>
-    </div>
+  
 
     @if (!string.IsNullOrEmpty(Model.SuccessMessage))
     {

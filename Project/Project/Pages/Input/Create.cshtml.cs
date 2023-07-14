@@ -13,8 +13,7 @@ namespace Project.Pages.Input
         public userInfo data = new userInfo();
         public String errorMessage = "";
         public String successMessage = "";
-        private int incomeCount = 0;
-        private int outcomeCount = 0;
+
 
         public void OnGet()
         {
@@ -38,31 +37,19 @@ namespace Project.Pages.Input
                 {
                     connection.Open();
 
-                    // Check if the generated Income_ID exists in the Income table
-                    string generatedIncomeID = "In_" + (++incomeCount).ToString();
-                    string validateQuery = "SELECT COUNT(*) FROM Income WHERE Income_ID = @incomeID";
-                    using (SqlCommand validateCommand = new SqlCommand(validateQuery, connection))
-                    {
-                        validateCommand.Parameters.AddWithValue("@incomeID", generatedIncomeID);
-                        int matchingCount = (int)validateCommand.ExecuteScalar();
-
-                        if (matchingCount == 0)
-                        {
-                            errorMessage = "Invalid Income_ID. Please provide a valid Income_ID.";
-                            return;
-                        }
-                    }
+                   
+                    
+               
 
                     // Proceed with inserting into the data table
                     String sql = "INSERT INTO data " +
-                                 "([user], [role], [Income_ID], [Outcome_ID]) VALUES " +
-                                 "(@user, @role, @Income_ID, @Outcome_ID);";
+                                 "([user], [role]) VALUES " +
+                                 "(@user, @role);";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("@user", data.user);
                         command.Parameters.AddWithValue("@role", data.role);
-                        command.Parameters.AddWithValue("@Income_ID", generatedIncomeID);
-                        command.Parameters.AddWithValue("@Outcome_ID", "Out_" + (++outcomeCount).ToString());
+        
 
                         command.ExecuteNonQuery();
                     }

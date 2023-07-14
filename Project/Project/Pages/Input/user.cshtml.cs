@@ -27,9 +27,8 @@ namespace Project.Pages.User
                             {
                                 userInfo data = new userInfo();
                                 data.Id = reader.GetInt32(0);
-                                data.role = reader.GetString(5);
-                                data.Income_ID = reader.GetString(6);
-                                data.Outcome_ID = reader.GetString(7);
+                                data.user = reader.GetString(1);
+                                data.role = reader.GetString(2);
                                 listUser.Add(data);
                             }
                         }
@@ -53,5 +52,10 @@ namespace Project.Pages.User
         public string role;
         public string Income_ID;
         public string Outcome_ID;
+        public string etc;
+        public string Value_Income;
+        public string Date;
+        public string Time;
+        public string Value_Outcome;
     }
 }
