@@ -9,12 +9,21 @@ namespace Project.Pages.Input
 {
     public class AddModel : PageModel
     {
+        public AddModel()
+        {
+            ExistingUsers = new List<UserModel>(); // Initialize the property here
+        }
+        public int Id { get; set; }
+        public string user { get; set; }
         [BindProperty]
         public int SelectedId { get; set; }
 
         [BindProperty]
         public string Info { get; set; }
-
+        [BindProperty]
+        public string time { get; set; }
+        [BindProperty]
+        public string etc { get; set; }
         [BindProperty]
         public string Type { get; set; }
 
@@ -29,17 +38,20 @@ namespace Project.Pages.Input
 
         public List<UserModel> ExistingUsers { get; set; }
 
+        public string ErrorMessage { get; set; }
+        public string SuccessMessage { get; set; }
+
         public void OnGet()
         {
             PopulateExistingUsers();
         }
 
-        public void OnPost()
+        public IActionResult OnPost()
         {
             if (!ModelState.IsValid)
             {
                 PopulateExistingUsers();
-                return;
+                return Page();
             }
 
             try
@@ -50,7 +62,7 @@ namespace Project.Pages.Input
                     connection.Open();
 
                     // Retrieve the selected user's information
-                    string getUserSql = "SELECT * FROM [user] WHERE Id = @id";
+                    string getUserSql = "SELECT * FROM [dbo].[data] WHERE Id = @id";
                     using (SqlCommand getUserCommand = new SqlCommand(getUserSql, connection))
                     {
                         getUserCommand.Parameters.AddWithValue("@id", SelectedId);
@@ -60,17 +72,46 @@ namespace Project.Pages.Input
                             {
                                 string user = userReader.GetString(1);
 
+                                // Close the userReader before executing the insertDataCommand
+                                userReader.Close();
+
                                 // Insert the new data into the selected user's record
-                                string insertDataSql = "INSERT INTO data ([user], [info], [type], [value]) VALUES (@user, @info, @type, @value)";
+                                string insertDataSql = "";
+                                if (Type == "income")
+                                {
+                                    insertDataSql = "INSERT INTO [dbo].[Income] ([Id], [Info], [etc], [Value_Income], [Date], [Time], [Type]) VALUES (@id, @info, @etc, @value, @date, @time, @type)";
+                                }
+                                else if (Type == "outcome")
+                                {
+                                    insertDataSql = "INSERT INTO [dbo].[Outcome] ([Id], [Info], [etc], [Value_Outcome], [Date], [Time], [Type]) VALUES (@id, @info, @etc, @value, @date, @time, @type)";
+                                }
+                                else
+                                {
+                                    // Invalid type
+                                    ErrorMessage = "Invalid Type value.";
+                                    PopulateExistingUsers();
+                                    return Page();
+                                }
+
                                 using (SqlCommand insertDataCommand = new SqlCommand(insertDataSql, connection))
                                 {
-                                    insertDataCommand.Parameters.AddWithValue("@user", user);
+                                    insertDataCommand.Parameters.AddWithValue("@id", SelectedId);
                                     insertDataCommand.Parameters.AddWithValue("@info", Info);
-                                    insertDataCommand.Parameters.AddWithValue("@type", Type);
+                                    insertDataCommand.Parameters.AddWithValue("@etc", etc);
                                     insertDataCommand.Parameters.AddWithValue("@value", Value);
+                                    insertDataCommand.Parameters.AddWithValue("@date", DateTime.Now.Date);
+                                    insertDataCommand.Parameters.AddWithValue("@time", time);
+                                    insertDataCommand.Parameters.AddWithValue("@type", Type);
 
                                     insertDataCommand.ExecuteNonQuery();
                                 }
+                            }
+                            else
+                            {
+                                // User not found
+                                ErrorMessage = "Selected user not found.";
+                                PopulateExistingUsers();
+                                return Page();
                             }
                         }
                     }
@@ -80,21 +121,21 @@ namespace Project.Pages.Input
                 Info = string.Empty;
                 Type = string.Empty;
                 Value = string.Empty;
+
+                // Set success message
+                SuccessMessage = "New list added!";
+                return Page();
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, ex.Message);
+                ErrorMessage = ex.Message;
                 PopulateExistingUsers();
-                return;
+                return Page();
             }
-
-            // Redirect to the index page or any other desired page
-            // return RedirectToPage("/Index");
         }
 
         private void PopulateExistingUsers()
         {
-            // Retrieve the existing users from the database
             ExistingUsers = new List<UserModel>();
 
             try
@@ -103,7 +144,7 @@ namespace Project.Pages.Input
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string sql = "SELECT * FROM [user]";
+                    string sql = "SELECT * FROM [dbo].[data]";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
@@ -122,8 +163,11 @@ namespace Project.Pages.Input
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, ex.Message);
+                // Handle the exception or log it
+                // Set ExistingUsers to an empty list or null if appropriate
             }
+            
         }
+
     }
 }

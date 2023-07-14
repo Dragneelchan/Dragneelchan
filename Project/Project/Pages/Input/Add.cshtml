@@ -1,23 +1,30 @@
 ﻿@page
-@model Project.Pages.Input.newModel
+@model Project.Pages.Input.AddModel
 @{
 }
 <br />
 <h1>New List</h1>
 
-@if (Model.errorMessage.Length > 0)
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
 {
     <div class='alert alert-warning alert-dismissible fade show' role='alert'>
-        <strong>@Model.errorMessage</strong>
+        <strong>@Model.ErrorMessage</strong>
         <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='close'></button>
     </div>
 }
+
 
 <form method="POST">
     <div class="row mb-3">
         <label class="col-sm-3">User</label>
         <div>
-            <input type="text" class="form-control" name="user" value="@Model.data.user">
+            <select asp-for="SelectedId" class="form-control">
+                <option value=""></option>
+                @foreach (var user in Model.ExistingUsers)
+                {
+                    <option value="@user.Id">@user.User</option>
+                }
+            </select>
         </div>
     </div>
     <div class="row mb-3">
@@ -51,24 +58,43 @@
         </div>
     </div>
     <div class="row mb-3">
+        <label class="col-sm-3">etc</label>
+        <div>
+            <input type="text" class="form-control" name="etc" value="">
+        </div>
+    </div>
+    <div class="row mb-3">
         <label class="col-sm-3">Type</label>
         <div>
             <select class="form-control" name="type">
-                <option value="income" selected="@(Model.data.info == "income")">Income</option>
-                <option value="outcome" selected="@(Model.data.info == "outcome")">Outcome</option>
+                <option value="income" selected="@((Model.Type == "income") ? "selected" : null)">Income</option>
+                <option value="outcome" selected="@((Model.Type == "outcome") ? "selected" : null)">Outcome</option>
             </select>
         </div>
     </div>
     <div class="row mb-3">
         <label class="col-sm-3">Value</label>
         <div>
-            <input type="number" class="form-control" name="value" value="@Model.data.value">
+            <input type="number" class="form-control" name="value" value="">
         </div>
     </div>
-    @if (Model.successMessage.Length > 0)
+    <div class="row mb-3">
+        <label class="col-sm-3">Date</label>
+        <div>
+            <input type="date" class="form-control" name="date" value="">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Time</label>
+        <div>
+            <input type="time" class="form-control" name="time" value="">
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.SuccessMessage))
     {
         <div class='alert alert-warning alert-dismissible fade show' role='alert'>
-            <strong>@Model.successMessage</strong>
+            <strong>@Model.SuccessMessage</strong>
             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='close'></button>
         </div>
     }

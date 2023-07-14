@@ -7,8 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Income.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.ComponentModel" Version="4.3.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Income.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Income.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Input\Income.cshtml" />
   </ItemGroup>
 
 </Project>
