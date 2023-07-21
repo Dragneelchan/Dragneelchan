@@ -7,6 +7,8 @@ namespace Project.Pages.Input
 {
     public class IncomeModel : PageModel
     {
+        public List<Income> listIncomeData { get; set; }
+        public UserData UserData { get; set; }
         public List<Income> listUser { get; set; }
 
         public void OnGet()
@@ -17,7 +19,7 @@ namespace Project.Pages.Input
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string sql = "SELECT * FROM Income";
+                    string sql = "SELECT data.Id, data.[user], Income.Income_ID, Income.Info, Income.Etc, Income.Value_Income, Income.Date, Income.Time, Income.Type FROM Income JOIN data ON Income.Id = data.Id";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
@@ -28,6 +30,7 @@ namespace Project.Pages.Input
                                 Income income = new Income
                                 {
                                     Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                                    User = reader.GetString(reader.GetOrdinal("user")),
                                     Income_ID = reader.GetInt32(reader.GetOrdinal("Income_ID")),
                                     Info = reader.GetString(reader.GetOrdinal("Info")),
                                     Etc = reader.GetString(reader.GetOrdinal("etc")),
@@ -53,6 +56,7 @@ namespace Project.Pages.Input
     public class Income
     {
         public int Id { get; set; }
+        public string User { get; set; }
         public int Income_ID { get; set; }
         public string Info { get; set; }
         public string Etc { get; set; }
@@ -60,5 +64,10 @@ namespace Project.Pages.Input
         public string Date { get; set; }
         public string Time { get; set; }
         public string Type { get; set; }
+    }
+    public class UserData
+    {
+        public int Id { get; set; }
+        public string User { get; set; }
     }
 }

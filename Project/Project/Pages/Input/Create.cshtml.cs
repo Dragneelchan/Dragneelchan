@@ -64,7 +64,7 @@ namespace Project.Pages.Input
             data.user = "";
             data.role = "";
             successMessage = "New list added!";
-            Response.Redirect("/Index");
+            Response.Redirect("/Input/user");
         }
 
     }

@@ -7,6 +7,9 @@ namespace Project.Pages.Input
 {
     public class OutcomeModel : PageModel
     {
+        public List<Outcome> listOutcomeData { get; set; }
+        public UserData UserData { get; set; }
+
         public List<Outcome> listOutcome { get; set; }
 
         public void OnGet()
@@ -17,7 +20,7 @@ namespace Project.Pages.Input
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string sql = "SELECT * FROM Outcome";
+                    string sql = "SELECT data.Id, data.[user], Outcome.Outcome_ID, Outcome.info, Outcome.etc, Outcome.Value_Outcome, Outcome.Date, Outcome.Time, Outcome.type FROM Outcome JOIN data ON Outcome.Id = data.Id";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
@@ -28,6 +31,7 @@ namespace Project.Pages.Input
                                 Outcome outcome = new Outcome
                                 {
                                     Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                                    User = reader.GetString(reader.GetOrdinal("user")),
                                     Outcome_ID = reader.GetInt32(reader.GetOrdinal("Outcome_ID")),
                                     Info = reader.GetString(reader.GetOrdinal("info")),
                                     Etc = reader.GetString(reader.GetOrdinal("etc")),
@@ -53,6 +57,7 @@ namespace Project.Pages.Input
     public class Outcome
     {
         public int Id { get; set; }
+        public string User { get; set; }
         public int Outcome_ID { get; set; }
         public string Info { get; set; }
         public string Etc { get; set; }

@@ -20,7 +20,7 @@
         @foreach (var item in Model.listUser)
         {
             <tr>
-                <td>@item.Id</td>
+                <td>@($"{item.Id} - {item.User}")</td>
                 <td>@item.Income_ID</td>
                 <td>@item.Info</td>
                 <td>@item.Etc</td>
@@ -28,7 +28,10 @@
                 <td>@item.Date</td>
                 <td>@item.Time</td>
                 <td>@item.Type</td>
+                <td> <a class="btn btn-primary btn-sm" href="/Input/PayEdit?id=@item.Income_ID">Edit</a></td>
             </tr>
         }
+  
+ 
     </tbody>
 </table>
