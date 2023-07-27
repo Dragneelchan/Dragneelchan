@@ -29,6 +29,8 @@ namespace Project.Pages.User
                                 data.Id = reader.GetInt32(0);
                                 data.user = reader.GetString(1);
                                 data.role = reader.GetString(2);
+                                data.Username = reader.GetString(3);
+                                data.Password = reader.GetString(4);
                                 listUser.Add(data);
                             }
                         }
@@ -46,6 +48,8 @@ namespace Project.Pages.User
     {
         public int Id;
         public string user;
+        public string Username;
+        public string Password;
         public string info;
         public string type;
         public string value;

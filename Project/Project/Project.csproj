@@ -23,8 +23,4 @@
     <_ContentIncludedByDefault Remove="Pages\Income.cshtml" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="Pages\Input\Income.cshtml" />
-  </ItemGroup>
-
 </Project>

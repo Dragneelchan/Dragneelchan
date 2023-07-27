@@ -23,8 +23,10 @@ namespace Project.Pages.Input
         {
             data.user = Request.Form["user"];
             data.role = Request.Form["role"];
+            data.Username = Request.Form["Username"];
+            data.Password = Request.Form["Password"];
 
-            if (data.user.Length == 0 || string.IsNullOrEmpty(data.role))
+            if (data.user.Length == 0 || string.IsNullOrEmpty(data.role) || string.IsNullOrEmpty(data.Username) || string.IsNullOrEmpty(data.Password))
             {
                 errorMessage = "All the fields are required";
                 return;
@@ -37,19 +39,21 @@ namespace Project.Pages.Input
                 {
                     connection.Open();
 
-                   
-                    
-               
+
+
+
 
                     // Proceed with inserting into the data table
                     String sql = "INSERT INTO data " +
-                                 "([user], [role]) VALUES " +
-                                 "(@user, @role);";
+                                 "([user], [role], [Username], [Password]) VALUES " +
+                                 "(@user, @role, @Username, @Password);";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("@user", data.user);
                         command.Parameters.AddWithValue("@role", data.role);
-        
+                        command.Parameters.AddWithValue("@Username", data.Username);
+                        command.Parameters.AddWithValue("@Password", data.Password);
+
 
                         command.ExecuteNonQuery();
                     }
@@ -63,8 +67,10 @@ namespace Project.Pages.Input
 
             data.user = "";
             data.role = "";
+            data.Username = "";
+            data.Password = "";
             successMessage = "New list added!";
-            Response.Redirect("/Index");
+            Response.Redirect("/Input/user");
         }
 
     }
