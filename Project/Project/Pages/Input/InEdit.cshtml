@@ -1,0 +1,90 @@
+﻿@page
+@model Project.Pages.Input.InEditModel
+
+<br />
+<h1>Payment Editor</h1>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>@Model.ErrorMessage</strong>
+        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='close'></button>
+    </div>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <label class="col-sm-3">User</label>
+        <div>
+            <select asp-for="SelectedId" class="form-control">
+                <option value=""></option>
+                @foreach (var user in Model.ExistingUsers)
+                {
+                    <option value="@user.Id" selected="@((Model.SelectedId == user.Id) ? "selected" : null)">@user.User</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Information</label>
+        <div>
+            <select class="form-control" name="info">
+                <option value="1. Salary" selected="@((Model.Info == "1. Salary") ? "selected" : null)">1. Salary</option>
+                <option value="2. Social insurance" selected="@((Model.Info == "2. Social insurance") ? "selected" : null)">2. Social insurance 法定福利費（社員の社会保険/50%/750B負担分）</option>
+                <option value="3. travel expenses" selected="@((Model.Info == "3. travel expenses") ? "selected" : null)">3. travel expenses (旅費交通費)</option>
+                <!-- Add other options with selected attribute -->
+            </select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">etc</label>
+        <div>
+            <input type="text" class="form-control" name="etc" value="@Model.Etc">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Type</label>
+        <div>
+            <select class="form-control" name="type">
+                <option value="income" selected="@((Model.Type == "income") ? "selected" : null)">Income</option>
+                <option value="outcome" selected="@((Model.Type == "outcome") ? "selected" : null)">Outcome</option>
+            </select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Value</label>
+        <div>
+            <input type="number" class="form-control" name="value" value="@Model.Value">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Date</label>
+        <div>
+            <input type="date" class="form-control" name="date" value="@Model.Date.ToString("yyyy-MM-dd")">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Time</label>
+        <div>
+            <input type="time" class="form-control" name="time" value="@Model.Time">
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+    {
+        <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+            <strong>@Model.SuccessMessage</strong>
+            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='close'></button>
+        </div>
+    }
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn-primary">Submit</button>
+        </div>
+
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/" role="button">Cancel</a>
+        </div>
+    </div>
+
+</form>

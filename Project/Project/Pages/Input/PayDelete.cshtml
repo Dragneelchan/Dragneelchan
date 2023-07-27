@@ -1,0 +1,36 @@
+﻿@page
+@using System.Data.SqlClient;
+@{
+    try
+    {
+        string no = Request.Query["No"];
+        string connectionString = "Data Source=192.168.1.65;Initial Catalog=intern;Persist Security Info=True;User ID=sa;Password=01Password";
+
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            connection.Open();
+            string sql = "DELETE FROM Payment WHERE [No] = @No";
+
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@No", no);
+                int rowsAffected = command.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    // Record deleted successfully, redirect to "Income" page
+                    Response.Redirect("/Input/account");
+                }
+                else
+                {
+                    // No matching record found, handle accordingly (e.g., show an error message)
+                    Console.WriteLine("No matching record found for deletion.");
+                }
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        // Handle the exception if required
+        Console.WriteLine("An error occurred: " + ex.Message);
+    }
+}

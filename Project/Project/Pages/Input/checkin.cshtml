@@ -1,0 +1,127 @@
+﻿@page
+@model Project.Pages.Input.CheckinModel
+@{
+    ViewData["Title"] = "Check-in";
+}
+
+<h1 class="text-center">Check-in System</h1>
+<div class="select-id-container">
+    <form method="post">
+        <div class="form-group">
+            <label for="SelectedId">Select User:</label>
+            <select class="form-control" id="SelectedId" name="SelectedId" required>
+                <option value="">Select User</option>
+                @foreach (var user in Model.ExistingUsers)
+                {
+                    <option value="@user.Id">@user.User</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Type">Check-in Type:</label>
+            <select class="form-control" id="Type" name="Type" required>
+                <option value="">Select Type</option>
+                <option value="Check-in">Check-in</option>
+                <option value="Check-out">Check-out</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Date">Date:</label>
+            <input class="form-control" id="Date" name="Date" type="date" value="@DateTime.Now.ToString("yyyy-MM-dd")" required />
+        </div>
+        <div class="form-group">
+            <label for="Time">Time:</label>
+            <input class="form-control" id="Time" name="Time" type="text" value="@DateTime.Now.ToString("HH:mm:ss")" required />
+        </div>
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger" role="alert">
+                @Model.ErrorMessage
+            </div>
+        }
+        <button type="submit" class="btn btn-primary">Check-in</button>
+    </form>
+</div>
+<div class="select-id-container">
+    <form method="get">
+        <div class="form-group">
+            <label for="filterID">Select User:</label>
+            <select class="form-control" id="filterID" name="filterID" asp-for="filterID" >
+                <option value="">Select User</option>
+                @foreach (var user in Model.ExistingUsers)
+                {
+                    <option value="@user.Id">@user.User</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="filterType">Check-in Type:</label>
+            <select class="form-control" id="filterType" name="filterType" asp-for="filterType" >
+                <option value="">Select Type</option>
+                <option value="Check-in">Check-in</option>
+                <option value="Check-out">Check-out</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="filterDate">Select Date:</label>
+            <input class="form-control" id="filterDate" name="filterDate" asp-for="filterDate" type="date" value="" />
+        </div>
+        <button type="submit" class="btn btn-primary">Filter</button>
+    </form>
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>User Name</th> <!-- Update the header to display User Name -->
+            <th>Date</th>
+            <th>Time</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var checkin in Model.listUser)
+        {
+            <tr>
+                <td>@checkin.No</td>
+                <td>@($"{checkin.Id} - {checkin.User}")</td>
+                <td>@checkin.Date.ToShortDateString()</td>
+                <td>@checkin.Time.ToString(@"hh\:mm\:ss")</td>
+                <td>@checkin.Type</td>
+
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Input/Edit?id=@checkin.Id">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Input/Delete?id=@checkin.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    // JavaScript to update the Date and Time inputs with the current date and time
+    window.onload = function () {
+        function updateDateTime() {
+            var dateInput = document.getElementById('Date');
+            var timeInput = document.getElementById('Time');
+
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = String(now.getMonth() + 1).padStart(2, '0');
+            var day = String(now.getDate()).padStart(2, '0');
+            var hours = String(now.getHours()).padStart(2, '0');
+            var minutes = String(now.getMinutes()).padStart(2, '0');
+            var seconds = String(now.getSeconds()).padStart(2, '0'); // Add seconds
+
+            dateInput.value = year + '-' + month + '-' + day;
+            timeInput.value = hours + ':' + minutes + ':' + seconds; // Update time with seconds
+        }
+
+        // Update the date and time inputs every second (1000 milliseconds)
+        setInterval(updateDateTime, 1000);
+    };
+</script>
+
+

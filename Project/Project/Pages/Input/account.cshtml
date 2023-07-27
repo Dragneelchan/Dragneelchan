@@ -1,0 +1,139 @@
+﻿@page
+@model Project.Pages.Input.AccountModel
+
+<h1>Payment List</h1>
+
+
+<!-- Assuming you are using Razor Pages, and this code is within a Razor Page or .cshtml file -->
+
+<form method="get">
+    <div class="select-id-container">
+    <label for="selectedId">Select Id:</label>
+    <select name="selectedId" id="selectedId">
+        <option value="0">All</option>
+        @{
+            // Use a HashSet to store unique Ids
+            var uniqueIds = new HashSet<int>();
+        }
+        @foreach (var userData in Model.listUserData)
+        {
+            // Check if the Id is not already in the HashSet
+            if (!uniqueIds.Contains(userData.Id))
+            {
+                uniqueIds.Add(userData.Id); // Add the Id to the HashSet
+
+                var displayText = $"{userData.Id} - {userData.User}";
+                <option value="@userData.Id" selected="@(Model.SelectedId == userData.Id)">@displayText</option>
+            }
+        }
+    </select>
+   
+    
+
+    <label for="selectedType">Select Type:</label>
+    <select name="selectedType" id="selectedType">
+        <option value="">All</option>
+        <option value="income" selected="@(Model.SelectedType == "income")">Income</option>
+        <option value="outcome" selected="@(Model.SelectedType == "outcome")">Outcome</option>
+    </select>
+
+        <label for="sortOrder">Sort by Value:</label>
+        <select name="sortOrder" id="sortOrder">
+            <option value="">Default</option>
+            <option value="lowToHigh" selected="@(Model.SortOrder == "lowToHigh")">Low to High</option>
+            <option value="highToLow" selected="@(Model.SortOrder == "highToLow")">High to Low</option>
+        </select>
+
+    <div class="select-id-container">
+    <label for="selectedInfo">Select Info:</label>
+    <select name="selectedInfo" id="selectedInfo">
+        <option value="">All</option>
+        <option value="1. Salary" selected="@(Model.SelectedInfo == "1. Salary")">1. Salary</option>
+        <option value="2. Social insurance" selected="@(Model.SelectedInfo == "2. Social insurance")">2. Social insurance 法定福利費（社員の社会保険/50%/750B負担分）</option>
+        <option value="3. travel expenses" selected="@(Model.SelectedInfo == "3. travel expenses")">3. travel expenses (旅費交通費)</option>
+        <option value="4. Renovation" selected="@(Model.SelectedInfo == "4. Renovation")">4. Renovation (事務所リフォーム)</option>
+        <option value="5. General repair cost" selected="@(Model.SelectedInfo == "5. General repair cost")">5. General repair cost (一般修繕費:事務所の修繕）外注駆除、清掃クリーニング</option>
+        <option value="6. Consulting" selected="@(Model.SelectedInfo == "6. Consulting")">6. Consulting (ビザ、ＷＰ、ホスティング、商標登録など)</option>
+        <option value="7. Entertainment cost" selected="@(Model.SelectedInfo == "7. Entertainment cost")">7. Entertainment cost (交際接待費、諸会費)</option>
+        <option value="8. Recruitment cost" selected="@(Model.SelectedInfo == "8. Recruitment cost")">8. Recruitment cost 人材紹介料</option>
+        <option value="9. Office rent" selected="@(Model.SelectedInfo == "9. Office rent")">9. Office rent (社屋家賃:253　ASOKE）</option>
+        <option value="10. Utility costs" selected="@(Model.SelectedInfo == "10. Utility costs")">10. Utility costs 光熱費(電気代、水道代）</option>
+        <option value="11. Communication fee" selected="@(Model.SelectedInfo == "11. Communication fee")">11. Communication fee (通信費:TEL, WIFI)</option>
+        <option value="12. Miscellaneous expenses" selected="@(Model.SelectedInfo == "12. Miscellaneous expenses")">12. Miscellaneous expenses (オフィスサプライ、消耗品、雑費、プリンタインク)</option>
+        <option value="13. 設備費" selected="@(Model.SelectedInfo == "13. 設備費")">13. 設備費 ：個人情報対策：オフィス家具、設備など（個人情報対策：鍵付きロッカー２個）</option>
+        <option value="14. 機器費" selected="@(Model.SelectedInfo == "14. 機器費")">14. 機器費 機器費（PC、PRITER、ＴＶ）</option>
+        <option value="15. ソフトウエア購入費" selected="@(Model.SelectedInfo == "15. ソフトウエア購入費")">15. ソフトウエア購入費 (Upgate to Window 10 Pro、Program Software、個人情報ウイルス対策ソフト)</option>
+        <option value="16. 広告宣伝" selected="@(Model.SelectedInfo == "16. 広告宣伝")">16. 広告宣伝 (タイ自由ランド,Bigbeat)</option>
+        <option value="17. Outsourcing Accounting" selected="@(Model.SelectedInfo == "17. Outsourcing Accounting")">17. Outsourcing Accounting 外部委託　会計処理（月次）</option>
+        <option value="18. Outsourcing Accounting Audit" selected="@(Model.SelectedInfo == "18. Outsourcing Accounting Audit")">18. Outsourcing Accounting Audit 外部委託　会計監査（中間申告、個人所得申告、年間申告、監査サポート、会計監査、定時株主総会）</option>
+        <option value="19. Banking fee" selected="@(Model.SelectedInfo == "19. Banking fee")">19. Banking fee　銀行手数料</option>
+        <option value="20. Outsource" selected="@(Model.SelectedInfo == "20. Outsource")">20. Outsource (外注費) Calender/Bigbeat Bangkok</option>
+        <option value="21. Tax and public dues" selected="@(Model.SelectedInfo == "21. Tax and public dues")">21. Tax and public dues　（租税公課）</option>
+        <option value="22. Interest payment" selected="@(Model.SelectedInfo == "22. Interest payment")">22. Interest payment (支払い利息、元金返済）</option>
+        <option value="23. ＴＡＸ" selected="@(Model.SelectedInfo == "23. ＴＡＸ")">23. ＴＡＸ（ＶＡＴ、源泉税、中間申告）</option>
+    </select>
+    </div>
+    
+    
+    
+
+    <input type="submit" value="Filter">
+    </div>
+</form>
+
+<div class="row mb-3">
+    <div class="col-sm-9"></div>
+    <div class="col-sm-3 text-right">
+        <a class="btn btn-primary btn-sm" href="/Input/Add">Add Data</a>
+    </div>
+</div>
+@if (Model.listAccount.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Payment ID</th>
+                <th>Username</th>
+                <th>Info</th>
+                <th>Etc</th>
+                <th>Value</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.listAccount)
+            {
+                <tr>
+                    <td>@item.Payment_ID</td>
+                    <td>@($"{item.Id} - {item.User}")</td>
+                    <td>@item.Info</td>
+                    <td>@item.Etc</td>
+                    <td>@item.Value</td>
+                    <td>@item.Date</td>
+                    <td>@item.Time</td>
+                    <td>@item.Type</td>
+                    <td> <a class="btn btn-primary btn-sm" href="/Input/PayEdit?No=@item.Payment_ID">Edit</a></td>
+                    <td><a class="btn btn-danger btn-sm" href="/Input/PayDelete?No=@item.Payment_ID">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td>Total:</td>
+                <td>@Model.TotalValue</td>
+                <td colspan="3"></td>
+            </tr>
+        </tfoot>
+    </table>
+  
+}
+else
+{
+    <p>No data available.</p>
+}
+
+
