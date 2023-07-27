@@ -72,19 +72,21 @@ namespace Project.Pages.Input
                             {
                                 string user = userReader.GetString(1);
 
+                                if (string.IsNullOrEmpty(etc))
+                                {
+                                    etc = "-";
+                                }
                                 // Close the userReader before executing the insertDataCommand
                                 userReader.Close();
 
                                 // Insert the new data into the selected user's record
+
                                 string insertDataSql = "";
-                                if (Type == "income")
+                                if (Type == "income" || Type == "outcome")
                                 {
-                                    insertDataSql = "INSERT INTO [dbo].[Income] ([Id], [Info], [etc], [Value_Income], [Date], [Time], [Type]) VALUES (@id, @info, @etc, @value, @date, @time, @type)";
+                                    insertDataSql = "INSERT INTO [dbo].[Payment] ([Id], [Info], [etc], [Value], [Date], [Time], [Type]) VALUES (@id, @info, @etc, @value, @date, @time, @type)";
                                 }
-                                else if (Type == "outcome")
-                                {
-                                    insertDataSql = "INSERT INTO [dbo].[Outcome] ([Id], [Info], [etc], [Value_Outcome], [Date], [Time], [Type]) VALUES (@id, @info, @etc, @value, @date, @time, @type)";
-                                }
+                                
                                 else
                                 {
                                     // Invalid type
@@ -165,6 +167,7 @@ namespace Project.Pages.Input
             {
                 // Handle the exception or log it
                 // Set ExistingUsers to an empty list or null if appropriate
+                Response.Redirect("/Input/account");
             }
             
         }
