@@ -1,10 +1,97 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    Layout = null; // Set the layout to null to disable using any layout.
+    ViewData["Title"] = "Login";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    /* Center the content vertically and horizontally */
+    .center-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .login-form {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+
+        .login-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        .login-form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+            .login-form button:hover {
+                background-color: #0056b3;
+            }
+
+    .error-message {
+        text-align: center;
+        color: red;
+        margin-top: 10px;
+    }
+</style>
+
+<div class="center-content">
+    <div class="login-form">
+        <h1>Login</h1>
+        <form method="post">
+            <div>
+                <label for="Username">Username:</label>
+                <input type="text" id="Username" name="Username" required />
+            </div>
+            <div>
+                <label for="Password">Password:</label>
+                <input type="password" id="Password" name="Password" required />
+            </div>
+            <button type="submit">Log In</button>
+        </form>
+        @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
+        {
+            <div class="error-message">
+                @ViewData["ErrorMessage"]
+            </div>
+        }
+    </div>
 </div>

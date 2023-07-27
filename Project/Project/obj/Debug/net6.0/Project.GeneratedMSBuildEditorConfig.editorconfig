@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5wdXRcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Pannawat/source/repos/Project/Project/Pages/Input/checkin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5wdXRcY2hlY2tpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Pannawat/source/repos/Project/Project/Pages/Input/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5wdXRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,16 +48,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5wdXRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pannawat/source/repos/Project/Project/Pages/Input/Income.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5wdXRcSW5jb21lLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Pannawat/source/repos/Project/Project/Pages/Input/InEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5wdXRcSW5FZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Pannawat/source/repos/Project/Project/Pages/Input/Outcome.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5wdXRcT3V0Y29tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Pannawat/source/repos/Project/Project/Pages/Input/PayDelete.cshtml]
