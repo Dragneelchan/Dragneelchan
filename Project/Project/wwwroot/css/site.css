@@ -40,3 +40,21 @@ option {
     background-color: #f0f0f0;
     color: #333;
 }
+.left-container {
+    float: left;
+    width: 45%;
+    height: 310px;
+}
+
+.right-container {
+    float: right;
+    width: 45%;
+    height: 310px;
+}
+.radius {
+    margin-top: 5px;
+}
+
+.below{
+    margin-bottom: 30px;
+}

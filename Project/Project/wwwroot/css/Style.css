@@ -1,0 +1,38 @@
+﻿/* Add custom styles here */
+
+.container {
+    margin-top: 20px;
+}
+
+.page-title {
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+ref on all of this style /* Style for the alternating rows */
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f5f5f5; /* Light gray background color */
+}
+
+/* Style for table headers */
+.table thead th {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* Text color for headers */
+}
+
+/* Style for table cells */
+.table tbody td {
+    background-color: #ffffff; /* White background color */
+    border-color: #ddd; /* Border color */
+}
+
+/* Hover effect on table rows */
+.table tbody tr:hover {
+    background-color: #f0f0f0; /* Lighter gray background color */
+}
+
+/* Add any additional styling as needed */
+/* Add any additional styling as needed */

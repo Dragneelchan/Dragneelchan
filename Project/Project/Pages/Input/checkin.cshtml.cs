@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Security.Principal;
+using System.Text;
 
 namespace Project.Pages.Input
 {
@@ -264,6 +265,12 @@ namespace Project.Pages.Input
                 // Set listUser to an empty list or null if appropriate
             }
         }
+
+
+
+
+
+
 
         public class CheckinData
         {

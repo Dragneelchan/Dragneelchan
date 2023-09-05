@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rDClP4XAGuXEx0QdNCxsFwLEMjnwSpqyZ2oJoJSLujo=",
+  "Hash": "dfJUneMu0oDZ1MbTCwGHjy9rQGOkNWiIPeXoJUqIUx4=",
   "Source": "Project",
   "BasePath": "_content/Project",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Project\\Project\\wwwroot\\css\\Style.css",
+      "SourceId": "Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Project\\Project\\wwwroot\\",
+      "BasePath": "_content/Project",
+      "RelativePath": "css/Style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Style.css"
     },
     {
       "Identity": "C:\\Users\\Pannawat\\source\\repos\\Project\\Project\\wwwroot\\favicon.ico",

@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 
 namespace Project.Pages.Input
 {
-    public class InEditModel : PageModel
+    public class EditCheckinModel : PageModel
     {
         [BindProperty(SupportsGet = true)]
         public int No { get; set; }
@@ -15,16 +15,7 @@ namespace Project.Pages.Input
         public int SelectedId { get; set; }
 
         [BindProperty]
-        public string Info { get; set; }
-
-        [BindProperty]
-        public string Etc { get; set; }
-
-        [BindProperty]
         public string Type { get; set; }
-
-        [BindProperty]
-        public string Value { get; set; }
 
         [BindProperty]
         public DateTime Date { get; set; }
@@ -42,19 +33,17 @@ namespace Project.Pages.Input
 
         [BindProperty]
         public string ErrorMessage { get; set; }
-        [BindProperty]
-        public string SuccessMessage { get; set; }
 
         public void OnGet()
         {
             try
             {
-                // Retrieve existing data from the database
-                string connectionString = "Data Source=192.168.1.65;Initial Catalog=intern;Persist Security Info=True;User ID=sa;Password=01Password";
+                // Retrieve existing data from the database (checkin table)
+                string connectionString = "YourConnectionStringHere";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string sql = "SELECT * FROM [dbo].[Payment] WHERE [No] = @id";
+                    string sql = "SELECT * FROM [dbo].[checkin] WHERE [No] = @id";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("@id", No);
@@ -63,10 +52,7 @@ namespace Project.Pages.Input
                             if (reader.Read())
                             {
                                 SelectedId = reader.GetInt32(reader.GetOrdinal("Id"));
-                                Info = reader.GetString(reader.GetOrdinal("info"));
-                                Etc = reader["etc"] == DBNull.Value ? null : reader.GetString(reader.GetOrdinal("etc"));
                                 Type = reader.GetString(reader.GetOrdinal("type"));
-                                Value = reader.GetString(reader.GetOrdinal("Value"));
                                 Time = reader["Time"] == DBNull.Value ? null : reader.GetTimeSpan(reader.GetOrdinal("Time")).ToString();
                                 Date = reader.GetDateTime(reader.GetOrdinal("Date"));
                             }
@@ -92,29 +78,27 @@ namespace Project.Pages.Input
         {
             try
             {
-                // Update the data in the database
-                string connectionString = "Data Source=192.168.1.65;Initial Catalog=intern;Persist Security Info=True;User ID=sa;Password=01Password";
+                // Update the data in the database (checkin table)
+                string connectionString = "YourConnectionStringHere";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
 
-                    // Update mode: Update the existing record
-                    string updateSql = "UPDATE [dbo].[Payment] SET [Id] = @user, [info] = @info, [etc] = @etc, [type] = @type, [Value] = @value, [Date] = @date, [Time] = @time WHERE [No] = @No";
+                    // Update mode: Update the existing record in the checkin table
+                    string updateSql = "UPDATE [dbo].[checkin] SET [Id] = @user, [Date] = @date, [Time] = @time, [type] = @type WHERE [No] = @No";
                     using (SqlCommand updateCommand = new SqlCommand(updateSql, connection))
                     {
                         updateCommand.Parameters.AddWithValue("@user", SelectedId);
-                        updateCommand.Parameters.AddWithValue("@info", Info);
-                        updateCommand.Parameters.AddWithValue("@etc", string.IsNullOrEmpty(Etc) ? (object)DBNull.Value : Etc);
-                        updateCommand.Parameters.AddWithValue("@type", Type);
-                        updateCommand.Parameters.AddWithValue("@value", Value);
                         updateCommand.Parameters.AddWithValue("@date", Date);
                         updateCommand.Parameters.AddWithValue("@time", string.IsNullOrEmpty(Time) ? (object)DBNull.Value : TimeSpan.Parse(Time));
+                        updateCommand.Parameters.AddWithValue("@type", Type);
                         updateCommand.Parameters.AddWithValue("@No", No);
 
                         int rowsAffected = updateCommand.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
-                            SuccessMessage = "List updated successfully!";
+                            // Redirect to a success page or show a success message
+                            return RedirectToPage("/Input/Checkin");
                         }
                         else
                         {
@@ -139,7 +123,7 @@ namespace Project.Pages.Input
 
             try
             {
-                string connectionString = "Data Source=192.168.1.65;Initial Catalog=intern;Persist Security Info=True;User ID=sa;Password=01Password";
+                string connectionString = "YourConnectionStringHere";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();

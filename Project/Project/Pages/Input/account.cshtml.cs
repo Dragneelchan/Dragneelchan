@@ -1,8 +1,11 @@
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.JSInterop;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Project.Pages.Input
@@ -14,128 +17,188 @@ namespace Project.Pages.Input
         public List<Account> listAccount { get; set; } = new List<Account>();
         public List<AccountData> listUserData { get; set; } = new List<AccountData>();
 
-        // Properties for filtering
         [BindProperty(SupportsGet = true)]
-        public int SelectedId { get; set; } = 0; // Default: 0 to show all
+        public int SelectedId { get; set; } = 0;
+
         [BindProperty(SupportsGet = true)]
-        public string SelectedInfo { get; set; } // Default: 0 to show all
+        public string SelectedInfo { get; set; }
+
         [BindProperty(SupportsGet = true)]
-        public string SelectedType { get; set; } // No default to show all types
+        public string SelectedType { get; set; }
+
         [BindProperty(SupportsGet = true)]
-        public string SelectedValue { get; set; } // Added property for filtering by Value
+        public string SortOrder { get; set; }
+
         [BindProperty(SupportsGet = true)]
-        public string SortOrder { get; set; } // Default: empty to show unsorted
-        public decimal TotalValue { get; set; } 
+        public DateTime StartDate { get; set; } = DateTime.MinValue;
+
+        [BindProperty(SupportsGet = true)]
+        public DateTime EndDate { get; set; } = DateTime.MaxValue;
+
+        public decimal TotalValue { get; set; }
         public List<int> AvailableIds { get; set; } = new List<int>();
+
+        [BindProperty(SupportsGet = true)]
+        public bool IsFilterSubmitted { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string SelectedStartDate { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string SelectedEndDate { get; set; }
+
+        [Inject]
+        public IJSRuntime JSRuntime { get; set; }
 
         public async Task OnGet()
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    await connection.OpenAsync();
+                await GetData();
+                SelectedStartDate = StartDate.ToString("yyyy-MM-dd");
+                SelectedEndDate = EndDate.ToString("yyyy-MM-dd");
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception if required
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
+        }
 
-                    // Get the distinct Ids from the Payment table
-                    string idQuery = "SELECT DISTINCT Id, [user] FROM data";
-                    using (SqlCommand idCommand = new SqlCommand(idQuery, connection))
+        public async Task<IActionResult> OnGetExportToCSV()
+        {
+            try
+            {
+                await GetData();
+
+                // Generate the CSV data
+                StringBuilder csvData = new StringBuilder();
+                csvData.AppendLine("Payment ID,Username,Info,Etc,Value,Date,Time,Type");
+
+                foreach (var account in listAccount)
+                {
+                    csvData.AppendLine($"{account.Payment_ID},{account.Id} - {account.User},{account.Info},{account.Etc},{account.Value},{account.Date},{account.Time},{account.Type}");
+                }
+
+                // Append the total value to the CSV data
+                csvData.AppendLine($",,,,,,,Total:,{TotalValue}");
+
+                // Set the response headers
+                Response.Headers.Add("Content-Disposition", "attachment; filename=PaymentList.csv");
+                Response.ContentType = "text/csv";
+
+                // Write the CSV data to the response body
+                byte[] csvBytes = Encoding.UTF8.GetBytes(csvData.ToString());
+                return new FileContentResult(csvBytes, "text/csv");
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception if required
+                Console.WriteLine("An error occurred: " + ex.Message);
+                return BadRequest("An error occurred while exporting to CSV.");
+            }
+        }
+
+        private async Task GetData()
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                await connection.OpenAsync();
+
+                // Get the distinct Ids from the Payment table
+                string idQuery = "SELECT DISTINCT Id, [user] FROM data";
+                using (SqlCommand idCommand = new SqlCommand(idQuery, connection))
+                {
+                    using (SqlDataReader idReader = await idCommand.ExecuteReaderAsync())
                     {
-                        using (SqlDataReader idReader = await idCommand.ExecuteReaderAsync())
+                        AvailableIds.Clear();
+                        listUserData.Clear(); // Clear the list to prevent duplicates
+                        while (idReader.Read())
                         {
-                            AvailableIds.Clear();
-                            listUserData.Clear(); // Clear the list to prevent duplicates
-                            while (idReader.Read())
-                            {
-                                var id = idReader.GetInt32(0);
-                                var user = idReader.GetString(1);
-                                // Add Id and User to the listUserData for displaying in the dropdown
-                                listUserData.Add(new AccountData { Id = id, User = user });
-                            }
+                            var id = idReader.GetInt32(0);
+                            var user = idReader.GetString(1);
+                            // Add Id and User to the listUserData for displaying in the dropdown
+                            listUserData.Add(new AccountData { Id = id, User = user });
                         }
                     }
+                }
 
+                string sql = "SELECT data.Id, data.[user], Payment.No, Payment.info, Payment.etc, Payment.Value, Payment.Date, Payment.Time, Payment.Type FROM Payment JOIN data ON Payment.Id = data.Id";
+                var conditions = new List<string>();
+                if (SelectedId != 0)
+                {
+                    conditions.Add("data.Id = @selectedId");
+                }
+                if (!string.IsNullOrEmpty(SelectedType))
+                {
+                    conditions.Add("Payment.Type = @selectedType");
+                }
+                if (!string.IsNullOrEmpty(SelectedInfo))
+                {
+                    conditions.Add("Payment.info = @selectedInfo");
+                }
 
-                    string sql = "SELECT data.Id, data.[user], Payment.No, Payment.info, Payment.etc, Payment.Value, Payment.Date, Payment.Time, Payment.Type FROM Payment JOIN data ON Payment.Id = data.Id";
-                    // Apply filtering if any of the filters is selected
-                    var conditions = new List<string>();
+                // Modify the date filtering conditions
+                if (StartDate != DateTime.MinValue && EndDate != DateTime.MaxValue)
+                {
+                    conditions.Add("Payment.Date BETWEEN @startDate AND @endDate");
+                }
+
+                if (conditions.Count > 0)
+                {
+                    sql += " WHERE " + string.Join(" AND ", conditions);
+                }
+
+                if (!string.IsNullOrEmpty(SortOrder))
+                {
+                    if (SortOrder == "lowToHigh")
+                    {
+                        sql += " ORDER BY CAST(Payment.Value AS INT) ASC";
+                    }
+                    else if (SortOrder == "highToLow")
+                    {
+                        sql += " ORDER BY CAST(Payment.Value AS INT) DESC";
+                    }
+                }
+
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
                     if (SelectedId != 0)
                     {
-                        conditions.Add("data.Id = @selectedId");
+                        command.Parameters.AddWithValue("@selectedId", SelectedId);
                     }
                     if (!string.IsNullOrEmpty(SelectedType))
                     {
-                        conditions.Add("Payment.Type = @selectedType");
+                        command.Parameters.AddWithValue("@selectedType", SelectedType);
                     }
                     if (!string.IsNullOrEmpty(SelectedInfo))
                     {
-                        conditions.Add("Payment.info = @selectedInfo");
+                        command.Parameters.AddWithValue("@selectedInfo", SelectedInfo);
+                    }
+                    if (StartDate != DateTime.MinValue && EndDate != DateTime.MaxValue)
+                    {
+                        command.Parameters.AddWithValue("@startDate", StartDate);
+                        command.Parameters.AddWithValue("@endDate", EndDate);
                     }
 
-                    if (conditions.Count > 0)
+                    using (SqlDataReader reader = await command.ExecuteReaderAsync())
                     {
-                        sql += " WHERE " + string.Join(" AND ", conditions);
-                    }
-
-                    // Apply sorting based on SortOrder
-                    if (!string.IsNullOrEmpty(SortOrder))
-                    {
-                        if (SortOrder == "lowToHigh")
+                        listAccount.Clear();
+                        while (reader.Read())
                         {
-                            // Modify sorting for numeric values (assuming "Value" is of numeric data type in the database)
-                            sql += " ORDER BY CAST(Payment.Value AS INT) ASC";
-                        }
-                        else if (SortOrder == "highToLow")
-                        {
-                            // Modify sorting for numeric values (assuming "Value" is of numeric data type in the database)
-                            sql += " ORDER BY CAST(Payment.Value AS INT) DESC";
-                        }
-                    }
-                    
-
-                    using (SqlCommand command = new SqlCommand(sql, connection))
-                    {
-                        // Add parameters for filtering if needed
-                        if (SelectedId != 0)
-                        {
-                            command.Parameters.AddWithValue("@selectedId", SelectedId);
-                        }
-                        if (!string.IsNullOrEmpty(SelectedType))
-                        {
-                            command.Parameters.AddWithValue("@selectedType", SelectedType);
-                        }
-                        if (!string.IsNullOrEmpty(SelectedInfo))
-                        {
-                            command.Parameters.AddWithValue("@selectedInfo", SelectedInfo);
-                        }
-
-
-                        using (SqlDataReader reader = await command.ExecuteReaderAsync())
-                        {
-                            listAccount.Clear();
-                            while (reader.Read())
+                            Account account = new Account
                             {
-                                Account account = new Account
-                                {
-                                    Payment_ID = reader.GetInt32(reader.GetOrdinal("No")),
-                                    Id = reader.GetInt32(reader.GetOrdinal("Id")),
-                                    User = reader.GetString(reader.GetOrdinal("user")),
-                                    Info = reader.GetString(reader.GetOrdinal("info")),
-                                    Etc = reader.GetString(reader.GetOrdinal("etc")),
-                                    Value = reader.GetString(reader.GetOrdinal("Value")),
-                                    Date = reader.GetDateTime(reader.GetOrdinal("Date")).ToString("yyyy-MM-dd"),
-                                    Time = reader.GetTimeSpan(reader.GetOrdinal("Time")).ToString(@"hh\:mm\:ss"),
-                                    Type = reader.GetString(reader.GetOrdinal("Type"))
-                                };
-                                listAccount.Add(account);
-
-                                // Retrieve user data based on Payment.Id
-                                AccountData userData = new AccountData
-                                {
-                                    Id = account.Id,
-                                    User = account.User
-                                };
-                                listUserData.Add(userData);
-                            }
+                                Payment_ID = reader.GetInt32(reader.GetOrdinal("No")),
+                                Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                                User = reader.GetString(reader.GetOrdinal("user")),
+                                Info = reader.GetString(reader.GetOrdinal("info")),
+                                Etc = reader.GetString(reader.GetOrdinal("etc")),
+                                Value = reader.GetString(reader.GetOrdinal("Value")),
+                                Date = reader.GetDateTime(reader.GetOrdinal("Date")).ToString("yyyy-MM-dd"),
+                                Time = reader.GetTimeSpan(reader.GetOrdinal("Time")).ToString(@"hh\:mm\:ss"),
+                                Type = reader.GetString(reader.GetOrdinal("Type"))
+                            };
+                            listAccount.Add(account);
                         }
                         decimal totalValue = 0;
                         foreach (var account in listAccount)
@@ -150,21 +213,11 @@ namespace Project.Pages.Input
                             }
                         }
                         TotalValue = totalValue;
-                        /*decimal totalValue = 0;
-                        foreach (var item in listAccount)
-                        {
-                            totalValue += item.NumericValue;
-                        }
-                        TotalValue = totalValue;*/
                     }
                 }
             }
-            catch (Exception ex)
-            {
-                // Handle the exception if required
-                Console.WriteLine("An error occurred: " + ex.Message);
-            }
         }
+
     }
 
     public class Account
@@ -179,8 +232,7 @@ namespace Project.Pages.Input
         public string Time { get; set; }
         public string Type { get; set; }
         public decimal NumericValue => decimal.TryParse(Value, out decimal numericValue) ? numericValue : 0;
-    
-}
+    }
 
     public class AccountData
     {

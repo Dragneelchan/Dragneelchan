@@ -4,8 +4,10 @@
     ViewData["Title"] = "Check-in";
 }
 
-<h1 class="text-center">Check-in System</h1>
-<div class="select-id-container">
+<h1 class="text-center below">Check-in System</h1>
+<div class="container">
+    <div class="select-id-container left-container">
+        
     <form method="post">
         <div class="form-group">
             <label for="SelectedId">Select User:</label>
@@ -39,39 +41,43 @@
                 @Model.ErrorMessage
             </div>
         }
-        <button type="submit" class="btn btn-primary">Check-in</button>
+            <button type="submit" class="btn btn-primary radius">Check-in</button>
     </form>
 </div>
-<div class="select-id-container">
-    <form method="get">
-        <div class="form-group">
-            <label for="filterID">Select User:</label>
-            <select class="form-control" id="filterID" name="filterID" asp-for="filterID" >
-                <option value="">Select User</option>
-                @foreach (var user in Model.ExistingUsers)
-                {
-                    <option value="@user.Id">@user.User</option>
-                }
-            </select>
+    <div class="select-id-container right-container">
+        <form method="get" class="filter-form">
+            <div class="form-group">
+                <label for="filterID">Select User:</label>
+                <select class="form-control" id="filterID" name="filterID" asp-for="filterID" onchange="this.form.submit()">
+                    <option value="">Select User</option>
+                    @foreach (var user in Model.ExistingUsers)
+                    {
+                        <option value="@user.Id">@user.User</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Check-in Type:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="FilterCheckIn" name="filterType" value="Check-in" onchange="this.form.submit()">
+                    <label class="form-check-label" for="FilterCheckIn">Check-in</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="FilterCheckOut" name="filterType" value="Check-out" onchange="this.form.submit()">
+                    <label class="form-check-label" for="FilterCheckOut">Check-out</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="filterDate">Select Date:</label>
+                <input class="form-control" id="filterDate" name="filterDate" asp-for="filterDate" type="date" value="" onchange="this.form.submit()" />
+            </div>
+            <button type="button" class="btn btn-secondary" id="resetFilterBtn">Reset Filter</button>
+        </form>
         </div>
-        <div class="form-group">
-            <label for="filterType">Check-in Type:</label>
-            <select class="form-control" id="filterType" name="filterType" asp-for="filterType" >
-                <option value="">Select Type</option>
-                <option value="Check-in">Check-in</option>
-                <option value="Check-out">Check-out</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="filterDate">Select Date:</label>
-            <input class="form-control" id="filterDate" name="filterDate" asp-for="filterDate" type="date" value="" />
-        </div>
-        <button type="submit" class="btn btn-primary">Filter</button>
-    </form>
 </div>
 
 
-<table class="table">
+<table class="table table-striped table-bordered">
     <thead>
         <tr>
             <th>No</th>
@@ -92,13 +98,15 @@
                 <td>@checkin.Type</td>
 
                 <td>
-                    <a class="btn btn-primary btn-sm" href="/Input/Edit?id=@checkin.Id">Edit</a>
+                    <a class="btn btn-primary btn-sm" href="/Input/InEdit?No=@checkin.No">Edit</a>
                     <a class="btn btn-danger btn-sm" href="/Input/Delete?id=@checkin.Id">Delete</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
+<button type="button" class="btn btn-success" id="exportCsvBtn">Export to CSV</button>
 
 <script>
     // JavaScript to update the Date and Time inputs with the current date and time
@@ -122,6 +130,24 @@
         // Update the date and time inputs every second (1000 milliseconds)
         setInterval(updateDateTime, 1000);
     };
-</script>
 
+    // Export to CSV script
+    document.getElementById('exportCsvBtn').addEventListener('click', function () {
+        var csvContent = "No,User Name,Date,Time,Type\n";
+
+    @foreach (var checkin in Model.listUser)
+    {
+        @:csvContent += "@checkin.No,@($"{checkin.Id} - {checkin.User}"),@checkin.Date.ToShortDateString(),@checkin.Time.ToString(@"hh\:mm\:ss"),@checkin.Type\n";
+    }
+
+                var blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        var link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'CheckinData.csv';
+        link.style.display = 'none';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+</script>
 
