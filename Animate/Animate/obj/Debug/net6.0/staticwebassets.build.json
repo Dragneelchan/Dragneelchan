@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tEETphxylupqOcZRTYLUCDEvKFSM6xgjOcVaMEKcYx0=",
+  "Hash": "TjlVPzsZQal0EEt7D8X0Q+yhwk81k4SKWF2aHZJadXI=",
   "Source": "Animate",
   "BasePath": "_content/Animate",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Animate\\wwwroot",
       "Source": "Animate",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Animate.styles.css",
+      "Identity": "D:\\Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Animate.styles.css",
       "SourceId": "Animate",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Animate",
       "RelativePath": "Animate.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Animate.styles.css"
+      "OriginalItemSpec": "D:\\Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Animate.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Animate.bundle.scp.css",
+      "Identity": "D:\\Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Animate.bundle.scp.css",
       "SourceId": "Animate",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Animate",
       "RelativePath": "Animate.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Animate.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Animate\\Animate\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Animate.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\css\\tooplate-wave-cafe.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\css\\tooplate-wave-cafe.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "css/tooplate-wave-cafe.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\tooplate-wave-cafe.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\favicon.ico",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\about-1.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\about-1.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/about-1.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\img\\about-1.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\about-2.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\about-2.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/about-2.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\img\\about-2.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\cloud.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\cloud.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/cloud.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\img\\cloud.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\desktop.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\desktop.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/desktop.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\img\\desktop.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\Expo.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\Expo.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/Expo.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Expo.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\fileserver.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\fileserver.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/fileserver.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fileserver.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\hot-americano.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\hot-americano.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/hot-americano.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\img\\hot-americano.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\hot-cappuccino.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\hot-cappuccino.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/hot-cappuccino.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\img\\hot-cappuccino.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\hot-espresso.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\hot-espresso.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/hot-espresso.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\img\\hot-espresso.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\hot-latte.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\hot-latte.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/hot-latte.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\img\\hot-latte.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\iced-americano.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\iced-americano.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/iced-americano.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\img\\iced-americano.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\iced-cappuccino.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\iced-cappuccino.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/iced-cappuccino.png",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\img\\iced-cappuccino.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\iced-espresso.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\iced-espresso.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/iced-espresso.png",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\img\\iced-espresso.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\iced-latte.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\iced-latte.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/iced-latte.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\img\\iced-latte.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\Mina.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\Mina.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/Mina.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Mina.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\semina.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\semina.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/semina.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\img\\semina.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\smoothie-1.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\smoothie-1.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/smoothie-1.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\img\\smoothie-1.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\smoothie-2.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\smoothie-2.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/smoothie-2.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\img\\smoothie-2.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\smoothie-3.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\smoothie-3.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/smoothie-3.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\img\\smoothie-3.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\smoothie-4.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\smoothie-4.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/smoothie-4.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\img\\smoothie-4.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\special-01.jpg",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\special-01.jpg",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/special-01.jpg",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\img\\special-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\special-02.jpg",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\special-02.jpg",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/special-02.jpg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\img\\special-02.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\special-03.jpg",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\special-03.jpg",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/special-03.jpg",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\img\\special-03.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\special-04.jpg",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\special-04.jpg",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/special-04.jpg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\img\\special-04.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\special-05.jpg",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\special-05.jpg",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/special-05.jpg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\img\\special-05.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\special-06.jpg",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\special-06.jpg",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/special-06.jpg",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\img\\special-06.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\tamakawa.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\tamakawa.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/tamakawa.png",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\img\\tamakawa.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\Tnijob.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\Tnijob.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/Tnijob.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Tnijob.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\trap.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\trap.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/trap.png",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\img\\trap.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\img\\YubiOn.png",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\img\\YubiOn.png",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "img/YubiOn.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\img\\YubiOn.png"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\js\\jquery-3.4.1.min.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\js\\jquery-3.4.1.min.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "js/jquery-3.4.1.min.js",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-3.4.1.min.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\video\\video.mp4",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\video\\video.mp4",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "video/video.mp4",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\video\\video.mp4"
     },
     {
-      "Identity": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\video\\wave-cafe-video-bg.mp4",
+      "Identity": "D:\\Animate\\Animate\\wwwroot\\video\\wave-cafe-video-bg.mp4",
       "SourceId": "Animate",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pannawat\\source\\repos\\Animate\\Animate\\wwwroot\\",
+      "ContentRoot": "D:\\Animate\\Animate\\wwwroot\\",
       "BasePath": "_content/Animate",
       "RelativePath": "video/wave-cafe-video-bg.mp4",
       "AssetKind": "All",
