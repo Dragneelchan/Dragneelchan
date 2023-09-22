@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Rundx</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Rundx.styles.css" asp-append-version="true" />
+   
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://use.fontawesome.com/2188c74ac9.js'></script>
+
+
+</head>
+<header class="l-header">
+    <div class="l-header__inner clearfix">
+        <div class="c-header-icon js-hamburger">
+            <div class="hamburger-toggle">
+                <span class="bar-top"></span>
+                <span class="bar-mid"></span>
+                <span class="bar-bot"></span>
+            </div>
+        </div>
+
+        <!-- Add the image here -->
+        <img src="~/asset/Icon.png" alt="" style="width: 250px; height: 100px;">
+    </div>
+</header>
+<body>
+    <div class="l-sidebar">
+        <div class="logo">
+            <div class="logo__txt">DX</div>
+
+        </div>
+        <div class="l-sidebar__content">
+            <nav class="c-menu js-menu">
+                <ul class="u-list">
+                    <li class="c-menu__item has-submenu" data-toggle="tooltip" title="General">
+                        <a href="/General">
+                        <div class="c-menu__item__inner">
+                            <i class="fa fa-puzzle-piece"></i>
+                            <div class="c-menu-item__title"><span>General</span></div>
+
+                        </div>
+                    </li>
+                    
+                    <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Device Control">
+                        <a href="/DeviceControl">
+                            <div class="c-menu__item__inner">
+                            
+                                <i class="fa fa-bar-chart"></i>
+                                <div class="c-menu-item__title"><span>Device Control</span></div>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="c-menu__item has-submenu" data-toggle="tooltip" title="White List">
+                        <a href="/WhiteList">
+                        <div class="c-menu__item__inner">
+                            
+                            <i class="fa fa-gift"></i>
+                            <div class="c-menu-item__title"><span>White List</span></div>
+                            <div class="c-menu-item__expand js-expand-submenu">
+                                <i class="fa fa-angle-down"></i>
+                               
+                                </div>
+                            
+                        </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div id="draggable" class="draggable-element" style="position: absolute; top: 120px; right: 50px;">
+        <div class="draggable-header" onmousedown="startDrag(event)">Hello There !</div>
+        <div class="draggable-content">
+            <button ondblclick="toggleDropdown()">Double-click me for dropdown</button>
+            <ul id="dropdown" class="dropdown">
+                <li>User</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <footer class="border-top footer text-muted">
+        <div class="container text-right">
+            &copy; 2023 - Rundx - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

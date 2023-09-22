@@ -1,0 +1,127 @@
+﻿@page
+@model DeviceControlModel
+@{
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .table-container {
+            margin-left: 150px; /* Adjust this margin as needed */
+        }
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #528AAE;
+            color: white;
+        }
+
+        .read-only {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <div class="table-container">
+    <table>
+        <tr>
+            <th>Name of Device</th>
+            <th>Accepted</th>
+            <th>Refused</th>
+            <th>Read Only</th>
+        </tr>
+            <tr>
+                <td>Storage</td>
+                <td><input type="radio" name="storage" value="Accepted"></td>
+                <td><input type="radio" name="storage" value="Refused"></td>
+                <td><input type="radio" name="storage" value="Read Only"></td>
+            </tr>
+            <tr>
+                <td>Floppy</td>
+                <td><input type="radio" name="floppy" value="Accepted"></td>
+                <td><input type="radio" name="floppy" value="Refused"></td>
+                <td><input type="radio" name="floppy" value="Read Only"></td>
+            </tr>
+            <tr>
+                <td>Smart Device</td>
+                <td><input type="radio" name="smart_device" value="Accepted"></td>
+                <td><input type="radio" name="smart_device" value="Refused"></td>
+                <td><input type="radio" name="smart_device" value="Read Only"></td>
+            </tr>
+            <tr>
+                <td>CD/DVD/BD</td>
+                <td><input type="radio" name="cd_dvd_bd" value="Accepted"></td>
+                <td><input type="radio" name="cd_dvd_bd" value="Refused"></td>
+                <td><input type="radio" name="cd_dvd_bd" value="Read Only"></td>
+            </tr>
+        <tr>
+            <td>Bluetooth</td>
+            <td><input type="radio" name="bluetooth" value="Accepted"></td>
+            <td><input type="radio" name="bluetooth" value="Refused"></td>
+            <td class="read-only"><input type="radio" name="bluetooth" value="Read Only" disabled></td>
+        </tr>
+        <tr>
+            <td>Share port</td>
+            <td><input type="radio" name="share_port" value="Accepted"></td>
+            <td><input type="radio" name="share_port" value="Refused"></td>
+            <td class="read-only"><input type="radio" name="share_port" value="Read Only" disabled></td>
+        </tr>
+        <tr>
+            <td>Printer</td>
+            <td><input type="radio" name="printer" value="Accepted"></td>
+            <td><input type="radio" name="printer" value="Refused"></td>
+            <td class="read-only"><input type="radio" name="printer" value="Read Only" disabled></td>
+        </tr>
+        <tr>
+            <td>WiFi</td>
+            <td><input type="radio" name="wifi" value="Accepted"></td>
+            <td><input type="radio" name="wifi" value="Refused"></td>
+            <td class="read-only"><input type="radio" name="wifi" value="Read Only" disabled></td>
+        </tr>
+        <tr>
+            <td>Network</td>
+            <td><input type="radio" name="network" value="Accepted"></td>
+            <td><input type="radio" name="network" value="Refused"></td>
+            <td class="read-only"><input type="radio" name="network" value="Read Only" disabled></td>
+        </tr>
+            <tr>
+                <td style="border: none;"></td> <!-- This cell will be blank with no borders -->
+                <td style="border: none;"></td> <!-- This cell will be blank with no borders -->
+                <td style="border: none;"></td> <!-- This cell will be blank with no borders -->
+                <td style="text-align: center;">
+                    <!-- Center the content horizontally -->
+                    <!-- Make the gear icon clickable by wrapping it in an anchor tag -->
+                    <a href="#">
+                        <!-- Replace the button with the gear icon -->
+                        <i class="fa fa-cog" style="cursor: pointer;"></i>
+                    </a>
+                </td>
+            </tr>
+            
+    </table>
+    </div>
+</body>
+</html>

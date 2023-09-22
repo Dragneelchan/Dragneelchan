@@ -1,0 +1,89 @@
+﻿@page
+@model Rundx.Pages.WhiteListModel
+@{
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wi-Fi WhiteList</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 80%;
+                margin: 20px auto;
+            }
+
+            th, td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #528AAE;
+                color: white; /* Add this line to make text color white */
+            }
+
+           
+        </style>
+    </head>
+    <body>
+        <h2>Wi-Fi WhiteList</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                    <th>SSID</th>
+                    <th>Etc.</th>
+                    <th>Add Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add rows of data here -->
+            </tbody>
+        </table>
+        <button id="addButton">Add Data</button>
+
+        <!-- JavaScript code to handle adding data -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const tableBody = document.querySelector("tbody");
+                const addButton = document.getElementById("addButton");
+
+                addButton.addEventListener("click", function () {
+                    // Create a new row
+                    const newRow = document.createElement("tr");
+
+                    // Create table data cells for each column
+                    const deleteCell = document.createElement("td");
+                    deleteCell.textContent = "Delete";
+
+                    const editCell = document.createElement("td");
+                    editCell.textContent = "Edit";
+
+                    const ssidCell = document.createElement("td");
+                    ssidCell.textContent = "SSID";
+
+                    const etcCell = document.createElement("td");
+                    etcCell.textContent = "Etc.";
+
+                    const addDateCell = document.createElement("td");
+                    addDateCell.textContent = new Date().toLocaleDateString();
+
+                    // Append cells to the row
+                    newRow.appendChild(deleteCell);
+                    newRow.appendChild(editCell);
+                    newRow.appendChild(ssidCell);
+                    newRow.appendChild(etcCell);
+                    newRow.appendChild(addDateCell);
+
+                    // Append the row to the table
+                    tableBody.appendChild(newRow);
+                });
+            });
+        </script>
+    </body>
+    </html>
+}
